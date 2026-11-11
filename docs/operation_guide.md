@@ -38,8 +38,28 @@
 
 - PowerShell の実行権限（ExecutionPolicy）を気にせずワンクリックで起動できます。
 
+### 方法 B: PowerShell ターミナルから起動
 
----
+VSCode などの PowerShell ターミナルでプロジェクトルートへ移動し、起動スクリプトを実行します。
+
+```powershell
+.\start_proxy.ps1
+```
+
+### 方法 C: 手動コマンドで起動
+
+コマンドプロンプトやターミナルでプロジェクトルートへ移動し、直接スクリプトを実行することも可能です。
+
+```powershell
+python server/sarashina_proxy.py
+```
+
+_(コードを修正しながら自動再起動させたい場合)_
+
+```powershell
+cd d:\work_vsc\sarashina-gateway
+uvicorn server.sarashina_proxy:app --host 127.0.0.1 --port 8000 --reload
+```
 
 ## 4. 起動時の表示と状態確認
 
