@@ -97,6 +97,9 @@ INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 
 VSCode の Continue 拡張機能設定ファイル（`~/.continue/config.json`）にて、以下の通り `apiBase` をローカルサーバーに向けて設定します。
 
+> [!NOTE]
+> Continue 拡張機能自体のインストール手順や使い方は **[Continue 導入・利用ガイド (continue_setup_guide.md)](continue_setup_guide.md)**、Nano / Guard モデルを含む設定例は **[Continue 設定ガイド (continue_config.md)](continue_config.md)** をご覧ください。
+
 ```json
 {
   "models": [
